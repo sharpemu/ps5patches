@@ -10,7 +10,7 @@ the supported title IDs, game versions, target executables and patch authors.
 
 | Game | Game Versions | Patch File |
 | --- | --- | --- |
-| Demon's Souls | `01.000.000`, `01.004.000` | [DemonsSouls.xml](prospero_patches/DemonsSouls.xml) |
+| Demon's Souls | `01.000.000`, `01.004.000`, `01.007.000` | [DemonsSouls.xml](prospero_patches/DemonsSouls.xml) |
 | Uncharted: Legacy of Thieves Collection | `01.000.000` | [Uncharted_LegacyThievesCollection.xml](prospero_patches/Uncharted_LegacyThievesCollection.xml) |
 
 The Uncharted file contains separate entries for A Thief's End and The Lost

@@ -38,4 +38,16 @@
             <Line Type="bytes" Address="0x58cfbd7a" Value="e9cffdffff"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="Demon Souls"
+              Name="Debug Menu"
+              Author="par274"
+              Note="Enables the existing in-game debug menu by setting the cached GPI value to 2. For game version 1.07."
+              PatchVer="1.0"
+              AppVer="01.007.000"
+              ImageBase="0x800000000"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x8008469e7" Value="b802000000"/>
+        </PatchList>
+    </Metadata>
 </Patch>
