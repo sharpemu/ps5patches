@@ -1,0 +1,30 @@
+{
+  "formatVersion": 1,
+  "files": [
+    {
+      "file": "DemonsSouls.xml",
+      "titleIds": [
+        "PPSA01339",
+        "PPSA01340",
+        "PPSA01341",
+        "PPSA01342"
+      ],
+      "versions": [
+        "01.000.000",
+        "01.004.000"
+      ]
+    },
+    {
+      "file": "Uncharted_LegacyThievesCollection.xml",
+      "titleIds": [
+        "PPSA05389",
+        "PPSA05684",
+        "PPSA05685",
+        "PPSA05686"
+      ],
+      "versions": [
+        "01.000.000"
+      ]
+    }
+  ]
+}

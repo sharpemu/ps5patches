@@ -19,14 +19,17 @@ build; check its target version before using it.
 
 ## Using Patches in SharpEmu
 
-1. Download the XML file for your game from `prospero_patches`.
-2. Copy it into `user/patches/` next to the SharpEmu executable.
-3. Right-click the game in the library and select **Patches**.
+1. Right-click the game in the library and select **Patches**.
+2. Click **Download patches**. SharpEmu checks the title ID and installed game
+   version, then downloads only matching XML files from this repository.
+3. A dialog confirms completion, or explicitly reports that no compatible patch
+   was found. Downloads are not enabled automatically.
 4. Select a patch to read its author, notes and target version, then tick its
    checkbox to enable it.
 5. Start the game. If it was already running, close it before changing patches.
 
-For example:
+You can also download XML files manually from `prospero_patches` and copy them
+into `user/patches/` next to the SharpEmu executable. For example:
 
 ```text
 SharpEmu/
@@ -76,6 +79,15 @@ Use English game names for filenames, uppercase title IDs and lowercase hex for
 addresses and byte values. Submit byte strings without spaces for consistency.
 Keep separate `Metadata` entries for different target versions or executables.
 Validate your patch on the exact game version before submitting.
+
+The download index [`patches.json`](patches.json) is generated from XML `TitleID`
+and `AppVer` fields, not game filenames. CI updates it automatically when patches
+are added, changed or removed on `main`. To regenerate or check it locally:
+
+```sh
+python scripts/update_index.py
+python scripts/update_index.py --check
+```
 
 ### Patch Types
 
