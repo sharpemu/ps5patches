@@ -17,6 +17,10 @@ The Uncharted file contains separate entries for A Thief's End and The Lost
 Legacy. A listed patch is not a guarantee of compatibility with every emulator
 build; check its target version before using it.
 
+**Idle Worker Nap** in `DemonsSouls.xml` reduces CPU use when workers have no
+job available. It may improve frame rate in CPU-limited scenes. It targets
+Demon's Souls 1.04 and 1.07.
+
 ## Using Patches in SharpEmu
 
 1. Right-click the game in the library and select **Patches**.
