@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <TitleID>
+        <ID>PPSA26344</ID>
+    </TitleID>
+    <Metadata Title="Ghost of Yotei"
+              Name="Performance mode (quality ladder row 15)"
+              Author="DarthPotato"
+              Note="Row 15 of the game's scalability ladder: level of detail 0.1, three fewer sun shadow views, small shadow casters culled. The game itself then sends about 45% fewer draws and dispatches per frame. Measured in SharpEmu on a Ryzen 5 3600 and RTX 3080, open world: 5.9 fps without, about 11 fps with it. Lower detail: fewer shadows, shorter draw distance for small objects. Every read of the game's own scalability ladder row (17 places) uses row 15 instead of the row the game sets (normally 0, full quality). Enable only one ladder patch at a time."
+              PatchVer="1.0"
+              AppVer="02.002.000"
+              ImageBase="0x800000000"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x800C47C1B" Value="b80f0000006690"/>
+            <Line Type="bytes" Address="0x800C4EC87" Value="b80f0000006690"/>
+            <Line Type="bytes" Address="0x800C54904" Value="b80f0000006690"/>
+            <Line Type="bytes" Address="0x8012388C7" Value="b90f0000006690"/>
+            <Line Type="bytes" Address="0x80123AE56" Value="ba0f0000006690"/>
+            <Line Type="bytes" Address="0x8012697E8" Value="b80f0000006690"/>
+            <Line Type="bytes" Address="0x80126A7B8" Value="b80f0000006690"/>
+            <Line Type="bytes" Address="0x80126B302" Value="b80f0000006690"/>
+            <Line Type="bytes" Address="0x80126BA33" Value="b80f0000006690"/>
+            <Line Type="bytes" Address="0x80126C0F3" Value="b80f0000006690"/>
+            <Line Type="bytes" Address="0x80126C5A3" Value="b80f0000006690"/>
+            <Line Type="bytes" Address="0x8013A8AAE" Value="b80f0000006690"/>
+            <Line Type="bytes" Address="0x8013C2591" Value="b90f0000006690"/>
+            <Line Type="bytes" Address="0x8013C83A8" Value="b80f0000006690"/>
+            <Line Type="bytes" Address="0x8015D44B3" Value="ba0f0000006690"/>
+            <Line Type="bytes" Address="0x8016278EC" Value="b80f0000006690"/>
+            <Line Type="bytes" Address="0x801636736" Value="b80f0000006690"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Ghost of Yotei"
+              Name="Balanced mode (quality ladder row 11)"
+              Author="DarthPotato"
+              Note="Row 11 of the game's scalability ladder: level of detail 0.2, two fewer sun shadow views. Measured in SharpEmu on a Ryzen 5 3600 and RTX 3080, open world: about 6.5 fps without, 7.3 fps with it; less detail is lost than with row 15, and less is gained. Every read of the game's own scalability ladder row (17 places) uses row 11 instead of the row the game sets (normally 0, full quality). Enable only one ladder patch at a time."
+              PatchVer="1.0"
+              AppVer="02.002.000"
+              ImageBase="0x800000000"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x800C47C1B" Value="b80b0000006690"/>
+            <Line Type="bytes" Address="0x800C4EC87" Value="b80b0000006690"/>
+            <Line Type="bytes" Address="0x800C54904" Value="b80b0000006690"/>
+            <Line Type="bytes" Address="0x8012388C7" Value="b90b0000006690"/>
+            <Line Type="bytes" Address="0x80123AE56" Value="ba0b0000006690"/>
+            <Line Type="bytes" Address="0x8012697E8" Value="b80b0000006690"/>
+            <Line Type="bytes" Address="0x80126A7B8" Value="b80b0000006690"/>
+            <Line Type="bytes" Address="0x80126B302" Value="b80b0000006690"/>
+            <Line Type="bytes" Address="0x80126BA33" Value="b80b0000006690"/>
+            <Line Type="bytes" Address="0x80126C0F3" Value="b80b0000006690"/>
+            <Line Type="bytes" Address="0x80126C5A3" Value="b80b0000006690"/>
+            <Line Type="bytes" Address="0x8013A8AAE" Value="b80b0000006690"/>
+            <Line Type="bytes" Address="0x8013C2591" Value="b90b0000006690"/>
+            <Line Type="bytes" Address="0x8013C83A8" Value="b80b0000006690"/>
+            <Line Type="bytes" Address="0x8015D44B3" Value="ba0b0000006690"/>
+            <Line Type="bytes" Address="0x8016278EC" Value="b80b0000006690"/>
+            <Line Type="bytes" Address="0x801636736" Value="b80b0000006690"/>
+        </PatchList>
+    </Metadata>
+</Patch>
