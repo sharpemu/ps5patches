@@ -11,11 +11,16 @@ the supported title IDs, game versions, target executables and patch authors.
 | Game | Game Versions | Patch File |
 | --- | --- | --- |
 | Demon's Souls | `01.000.000`, `01.004.000`, `01.007.000` | [DemonsSouls.xml](prospero_patches/DemonsSouls.xml) |
+| Ghost of Yōtei | `02.002.000` | [GhostOfYotei.xml](prospero_patches/GhostOfYotei.xml) |
 | Uncharted: Legacy of Thieves Collection | `01.000.000` | [Uncharted_LegacyThievesCollection.xml](prospero_patches/Uncharted_LegacyThievesCollection.xml) |
 
 The Uncharted file contains separate entries for A Thief's End and The Lost
 Legacy. A listed patch is not a guarantee of compatibility with every emulator
 build; check its target version before using it.
+
+**Performance mode** and **Balanced mode** in `GhostOfYotei.xml` start the game on a
+lower row of its own quality ladder (row 15 or 11) for higher frame rates in
+CPU-limited scenes, at the cost of detail. Enable only one of them.
 
 **Idle Worker Nap** in `DemonsSouls.xml` reduces CPU use when workers have no
 job available. It may improve frame rate in CPU-limited scenes. It targets
