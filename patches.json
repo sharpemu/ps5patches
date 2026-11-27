@@ -16,6 +16,15 @@
       ]
     },
     {
+      "file": "GhostOfYotei.xml",
+      "titleIds": [
+        "PPSA26344"
+      ],
+      "versions": [
+        "02.002.000"
+      ]
+    },
+    {
       "file": "Uncharted_LegacyThievesCollection.xml",
       "titleIds": [
         "PPSA05389",
